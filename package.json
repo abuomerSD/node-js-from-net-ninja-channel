@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "lesson-5-status-code-and-npm",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abuomerSD/node-js-from-net-ninja-channel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abuomerSD/node-js-from-net-ninja-channel/issues"
+  },
+  "homepage": "https://github.com/abuomerSD/node-js-from-net-ninja-channel#readme",
+  "description": ""
+}
