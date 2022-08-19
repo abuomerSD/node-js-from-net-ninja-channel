@@ -1,35 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | <%= title %> </title>
-</head>
+<%- include("./partials/head.ejs") %> 
 <body>
-    <nav>
-        <div class="site-title">
-            <a href="/">Home</a>
-            <p>Net Ninja Site</p>
-            <ul>
-                <li><a href="/">Blogs</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/blogs/create">New Blog</a></li>
-            </ul>
-        </div>
+<%- include('./partials/nav.ejs') %> 
 
-        <div class="blogs content">
+     <div class="blogs-content">
             <h2>All Blogs</h2>
-            <% console.log(blogs.lenght) %> 
-            <% if(blogs.lenght > 0) { %>
-                <% blogs.forEach(blog =>{ %>
-                    <h3 class="title"><%= blog.title %> </h3>
-                    <p class="snippet "><%= blog.snippet %> </p>
-                <% }); %> \
-            <% } %>  
-            
+                <% if(blogs.length> 0) { %>
+                    <% blogs.forEach(blog =>{%>
+                        <h3>
+                            <%= blog.title %>
+                        </h3>
+                        <p>
+                            <%= blog.snippet %>
+                        </p>
+                        <% });} %>
+                        <h3>test title</h3>
+
         </div>
-        
-    </nav>
+        <%- include("./partials/footer.ejs") %> 
 </body>
+
 </html>
