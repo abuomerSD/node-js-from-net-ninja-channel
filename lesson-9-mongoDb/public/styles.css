@@ -1,0 +1,42 @@
+.site-title{
+    position: fixed;
+    left: 30px;
+    color: blue;
+    border: 10px;
+    border: 3px solid #73AD21;
+    top: 0px;
+    width: 20%;
+    padding: 5px;
+}
+.site-title.li{
+    color:darkorchid;
+    margin-left: 10px;
+    font-weight: 100px;
+}
+
+.blogs-content{
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    border: 3px solid #73AD21;
+    width: 76%;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;    
+}
+.create-blog{
+    position: fixed;
+    right: 0px;
+    width: 70%;
+
+}
+
+.about{
+    position: fixed;
+    right: 0px;
+    width: 70%;
+
+}
